@@ -15,5 +15,5 @@ jobs:
 
     - name: Compile and run C program
       run: |
-        gcc -o HelloWorld HelloWorld.c  # Replace 'my_program.c' with the name of your C source file
-        ./HelloWorld
+        gcc -o Hello_World Hello_World.c  # Replace 'my_program.c' with the name of your C source file
+        ./Hello_World
