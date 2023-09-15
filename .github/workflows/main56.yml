@@ -1,0 +1,19 @@
+name: Simple CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Compile and run C program
+      run: |
+        gcc -o HelloWorld HelloWorld.c  # Replace 'my_program.c' with the name of your C source file
+        ./HelloWorld
