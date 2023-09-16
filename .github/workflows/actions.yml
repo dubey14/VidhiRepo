@@ -17,6 +17,6 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build Docker image
         run: |
-          docker build -t vidhidubey/VidhiRepo:${{ github.run_number }} .
+          docker build -t vidhidubey/vidhirepo:${{ github.run_number }} .
           docker images
-          docker push vidhidubey/VidhiRepo:${{ github.run_number }}
+          docker push vidhidubey/vidhirepo:${{ github.run_number }}
